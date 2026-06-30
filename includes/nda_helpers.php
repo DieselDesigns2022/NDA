@@ -39,6 +39,21 @@ function initial_string(array $initials, string $key): string
     return trim((string) $value);
 }
 
+function normalize_url_for_storage(string $url): string
+{
+    $url = trim($url);
+
+    if ($url === '') {
+        return '';
+    }
+
+    if (!preg_match('#^[a-z][a-z0-9+.-]*://#i', $url)) {
+        $url = 'https://' . ltrim($url, '/');
+    }
+
+    return $url;
+}
+
 function safe_strlen(string $value): int
 {
     if (function_exists('mb_strlen')) {
@@ -143,10 +158,9 @@ function validate_nda(array $post): array
     }
 
     $url = post_string($post, 'business_website');
-    if ($url !== '' && !preg_match('#^https?://#i', $url)) {
-        $errors[] = 'Business website must start with https:// or http://.';
-    } elseif ($url !== '' && !filter_var($url, FILTER_VALIDATE_URL)) {
-        $errors[] = 'Business website must be a valid URL.';
+    $normalizedUrl = normalize_url_for_storage($url);
+    if ($url !== '' && !filter_var($normalizedUrl, FILTER_VALIDATE_URL)) {
+        $errors[] = 'Business website must be a valid website URL.';
     }
 
     $signatureData = post_string($post, 'signature_data');
@@ -186,11 +200,14 @@ function create_nda_submission(array $post): string
         $initials[$key] = initial_string($postedInitials, $key);
     }
 
+    $signedSnapshot = nda_text_snapshot($post);
+    $signedSnapshotHash = hash('sha256', $signedSnapshot);
+
     $fields = [
         'uuid' => $uuid,
         'nda_version' => NDA_VERSION,
-        'nda_text_hash' => nda_text_hash(),
-        'nda_text_snapshot' => nda_text_snapshot(),
+        'nda_text_hash' => $signedSnapshotHash,
+        'nda_text_snapshot' => $signedSnapshot,
         'legal_name' => post_string($post, 'legal_name'),
         'address_line_1' => post_string($post, 'address_line_1'),
         'address_line_2' => post_string($post, 'address_line_2'),
@@ -201,7 +218,7 @@ function create_nda_submission(array $post): string
         'email' => strtolower(post_string($post, 'email')),
         'phone' => post_string($post, 'phone'),
         'business_name' => post_string($post, 'business_name'),
-        'business_website' => post_string($post, 'business_website'),
+        'business_website' => normalize_url_for_storage(post_string($post, 'business_website')),
         'facebook_profile' => post_string($post, 'facebook_profile'),
         'testing_phase' => post_string($post, 'testing_phase'),
         'vouching_designer_name' => post_string($post, 'vouching_designer_name'),

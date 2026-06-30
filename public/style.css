@@ -113,6 +113,46 @@ button {
     text-align: left;
 }
 
+
+/* NDA rendered contract text */
+.nda-text {
+    line-height: 1.55;
+}
+
+.nda-text h2,
+.nda-text h3,
+.nda-text h4 {
+    margin: 0.9rem 0 0.35rem;
+    line-height: 1.25;
+}
+
+.nda-text h2:first-child,
+.nda-text h3:first-child,
+.nda-text h4:first-child {
+    margin-top: 0;
+}
+
+.nda-text p {
+    margin: 0.45rem 0 0.8rem;
+}
+
+.nda-text ol,
+.nda-text ul {
+    margin: 0.45rem 0 0.9rem 1.4rem;
+    padding-left: 1.1rem;
+}
+
+.nda-text li {
+    margin: 0.25rem 0;
+}
+
+
+.nda-text hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
 @media print {
     .no-print,
     .topbar,

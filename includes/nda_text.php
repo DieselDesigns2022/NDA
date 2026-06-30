@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-const NDA_VERSION = 'asset_moth_tester_nda_v1';
+const NDA_VERSION = 'asset_moth_tester_nda_v2';
 
 function nda_sections(): array
 {
@@ -18,15 +18,14 @@ This Confidentiality and Non-Disclosure Agreement (“Agreement”) is entered i
 **Disclosing Party:**
 Angela Rodgers, also known as Diesel Designs
 Founder / Creator / Admin of Asset Moth
-Email: ___________________________________________
+Email: diesel.designs.contact@gmail.com
 
 and
 
 **Receiving Party / Tester:**
-Legal Name: ___________________________________________
-Business Name, if applicable: ___________________________________________
-Email: ___________________________________________
-Facebook Name/Profile: ___________________________________________
+The Receiving Party / Tester is the person completing the required legal information, tester details, initials, acknowledgments, and electronic signature fields on this online form.
+
+The submitted legal information, business details, testing phase, initials, acknowledgments, typed signature, drawn signature, IP address, user agent, and submission timestamp will be stored with the signed NDA record.
 
 The Disclosing Party and Receiving Party may be referred to individually as a “Party” and collectively as the “Parties.”
 TXT,
@@ -202,29 +201,43 @@ The Receiving Party acknowledges that participation as a tester does not give th
 TXT,
         ],
         'section_9' => [
-            'title' => '9. Feedback and Suggestions',
+            'title' => '9. Feedback, Suggestions & Required Participation',
             'body' => <<<'TXT'
-## 9. Feedback and Suggestions
+## 9. Feedback, Suggestions & Required Participation
 
 The Receiving Party may provide feedback, ideas, suggestions, bug reports, comments, recommendations, feature requests, or improvement ideas during testing.
 
 The Receiving Party agrees that Angela Rodgers and Asset Moth may use, modify, reject, implement, publish, or build upon any feedback or suggestions provided during testing without owing payment, credit, ownership, royalties, approval, or additional permission to the Receiving Party.
 
 The Receiving Party understands that providing feedback does not give them ownership over Asset Moth, any feature, any improvement, any website change, or any future version of the platform.
+
+The Receiving Party understands that active testing and meaningful feedback are required parts of participation in the private testing phase.
+
+If the Receiving Party does not complete required testing tasks, does not provide requested feedback, does not report issues in good faith, becomes inactive, fails to communicate, or otherwise does not participate as reasonably required during the testing phase, Angela Rodgers may remove the Receiving Party from testing.
+
+If the Receiving Party is removed from the testing phase for lack of participation, lack of required feedback, inactivity, failure to communicate, unprofessional behavior, suspected confidentiality concerns, or breach of this Agreement, the Receiving Party may lose Founding Member status and any related rewards, perks, or benefits.
+
+Removal from testing, loss of Founding Member status, or loss of tester-related perks does not end this Agreement or release the Receiving Party from any confidentiality, non-disclosure, non-use, or other obligations under this Agreement.
 TXT,
         ],
         'section_10' => [
-            'title' => '10. Tester Participation, Purchases & No Compensation',
+            'title' => '10. Tester Participation, Purchases, Founding Member Status & No Monetary Compensation',
             'body' => <<<'TXT'
-## 10. Tester Participation, Purchases & No Compensation
+## 10. Tester Participation, Purchases, Founding Member Status & No Monetary Compensation
 
 The Receiving Party understands that testing may require participation in website activities such as creating an account, building a seller profile, uploading test products, browsing products, making small purchases, testing orders, testing downloads, testing payments, reporting bugs, and providing feedback.
 
-Unless separately agreed in writing, the Receiving Party is participating voluntarily and is not an employee, contractor, partner, agent, investor, co-owner, or representative of Angela Rodgers, Diesel Designs, or Asset Moth.
+The Receiving Party understands and agrees that participation in Alpha testing, Beta testing, or any related private testing phase is voluntary and does not create an employment relationship, contractor relationship, partnership, agency relationship, investment relationship, co-ownership relationship, or representative relationship with Angela Rodgers, Diesel Designs, or Asset Moth.
 
-Unless separately agreed in writing, the Receiving Party is not entitled to wages, payment, reimbursement, commission, ownership, equity, or compensation for participating in testing.
+The Receiving Party understands and agrees that there is no monetary compensation for participation in this testing phase unless Angela Rodgers separately agrees in writing.
 
-Any Founding Member badge, perk, benefit, or tester-related bonus is at the discretion of Angela Rodgers and may be adjusted, delayed, removed, or modified if necessary.
+The Receiving Party is not entitled to wages, hourly pay, salary, reimbursement, commission, profit sharing, ownership, equity, royalties, or cash compensation for participating in testing, providing feedback, reporting bugs, uploading test products, making test purchases, or helping evaluate the website.
+
+In exchange for approved participation in the private testing phase, and provided the Receiving Party participates in good faith and remains in compliance with this Agreement, the Receiving Party will be granted Asset Moth Founding Member status and the rewards, perks, or benefits associated with that status as made available by Angela Rodgers or Asset Moth.
+
+Founding Member status, rewards, perks, and benefits are non-monetary tester-related benefits. They do not create employment, ownership, partnership, equity, profit-sharing rights, payment rights, or any guarantee of future compensation.
+
+Angela Rodgers may reasonably adjust the timing, delivery method, format, or details of Founding Member rewards, perks, or benefits as needed for business, technical, launch, or platform reasons, but this does not remove the Receiving Party’s confidentiality obligations under this Agreement.
 TXT,
         ],
         'section_11' => [
@@ -264,18 +277,17 @@ TXT,
             'body' => <<<'TXT'
 ## 13. Duration of Confidentiality
 
-The confidentiality obligations under this Agreement begin on the Effective Date and continue for as long as the information remains non-public, confidential, proprietary, business-sensitive, or trade secret information.
+This Agreement begins on the Effective Date and remains valid and enforceable for eight (8) years from the date the Receiving Party signs this Agreement electronically.
 
-For information that qualifies as a trade secret, the confidentiality obligations continue for as long as the information remains a trade secret under applicable law.
+The Receiving Party’s confidentiality obligations, non-disclosure obligations, non-use obligations, screenshot/screen-recording restrictions, private-sharing restrictions, and all related obligations under this Agreement continue for the full eight (8) year term.
 
-For other Confidential Information that does not qualify as a trade secret, the confidentiality obligations continue for five years after the later of:
+The Receiving Party remains bound by this Agreement for the full eight (8) year term even if they quit testing, are removed from testing, are removed from any group chat, lose website access, lose Founding Member status, lose tester-related perks, fail to complete the testing phase, or stop participating for any reason.
 
-1. The Effective Date;
-2. The end of the Receiving Party’s testing participation;
-3. The public launch of Asset Moth;
-4. The last date Confidential Information was shared with the Receiving Party.
+During the eight (8) year term, the Receiving Party must continue to keep Confidential Information private and must not discuss, share, post, leak, copy, recreate, use, or disclose Confidential Information except as expressly allowed by this Agreement.
 
-Private tester discussions, private group chat content, private messages, bug reports, tester identities, testing issues, business strategy, unreleased roadmap details, and non-public internal decisions remain confidential even after Asset Moth becomes public, unless Angela Rodgers clearly releases that information in writing.
+Private tester discussions, private group chat content, private messages, bug reports, tester identities, testing issues, business strategy, unreleased roadmap details, and non-public internal decisions remain confidential during the full eight (8) year term unless Angela Rodgers clearly releases that specific information in writing.
+
+To the extent any Confidential Information is also protected by trade secret law, intellectual property law, privacy law, contract law, or any other applicable legal protection, nothing in this section is intended to waive or limit any rights or remedies that may exist under those laws.
 TXT,
         ],
         'section_14' => [
@@ -380,9 +392,11 @@ TXT,
             'body' => <<<'TXT'
 ## 21. No Guarantee of Access or Continued Participation
 
-Angela Rodgers may remove the Receiving Party from testing at any time for any reason, including but not limited to lack of participation, lack of communication, failure to provide feedback, suspected confidentiality concerns, unprofessional behavior, conflict of interest, breach of this Agreement, or business needs.
+Angela Rodgers may remove the Receiving Party from testing at any time for any reason, including but not limited to lack of participation, lack of communication, failure to provide required testing feedback, failure to complete requested testing tasks, suspected confidentiality concerns, unprofessional behavior, conflict of interest, breach of this Agreement, or business needs.
 
-Removal from testing does not end the Receiving Party’s confidentiality obligations.
+Removal from testing, quitting testing, losing access, failing to complete testing, or losing Founding Member status does not end this Agreement and does not release the Receiving Party from confidentiality, non-disclosure, non-use, screenshot/screen-recording restrictions, private-sharing restrictions, or any other obligations under this Agreement.
+
+If the Receiving Party is removed for lack of required participation, lack of required feedback, inactivity, failure to communicate, unprofessional behavior, suspected confidentiality concerns, or breach of this Agreement, they may lose Founding Member status and any related tester perks, rewards, or benefits.
 TXT,
         ],
         'section_22' => [
@@ -426,72 +440,19 @@ The Parties agree that this Agreement may be signed electronically. Electronic s
 TXT,
         ],
         'signatures' => [
-            'title' => 'Signatures & Legal Acknowledgment section',
+            'title' => 'Signatures & Legal Acknowledgment',
             'body' => <<<'TXT'
 # SIGNATURES & LEGAL ACKNOWLEDGMENT
 
-By signing below, the Receiving Party confirms that they have read, understood, and agreed to this Confidentiality and Non-Disclosure Agreement in full.
+By completing and submitting the electronic signature fields on this form, the Receiving Party confirms that they have read, understood, and agreed to this Confidentiality and Non-Disclosure Agreement in full.
 
-The Receiving Party further acknowledges and understands that any violation of this Agreement may result in immediate removal from Asset Moth testing, loss of any tester-related perks or benefits, and legal action by Angela Rodgers to protect herself, Diesel Designs, Asset Moth, and all related confidential, proprietary, and business-sensitive information.
+The Receiving Party further acknowledges and understands that any violation of this Agreement may result in immediate removal from Asset Moth testing, loss of tester-related perks or benefits, loss of Founding Member-related benefits, and legal action by Angela Rodgers to protect herself, Diesel Designs, Asset Moth, and all related confidential, proprietary, and business-sensitive information.
 
 The Receiving Party understands and agrees that legal action may include, but is not limited to, claims for damages, injunctive relief, recovery of legal costs where allowed by law, and any other remedies available under applicable law.
 
 The Receiving Party understands that by signing this Agreement, they are agreeing not to discuss, share, post, leak, copy, recreate, use, or disclose any protected Asset Moth information with anyone outside of approved Asset Moth testers, approved Asset Moth admins, and Angela Rodgers.
 
----
-
-## Disclosing Party
-
-Signature: ___________________________________________
-
-Printed Name: **Angela Rodgers**
-
-Also Known As / Business Name: **Diesel Designs**
-
-Project / Business Name: **Asset Moth**
-
-Date: ___________________________________________
-
----
-
-## Receiving Party / Tester
-
-Signature: ___________________________________________
-
-Printed Legal Name: ___________________________________________
-
-Business Name, if applicable: ___________________________________________
-
-Email: ___________________________________________
-
-Facebook Name/Profile: ___________________________________________
-
-Testing Phase Requested:
-☐ Alpha
-☐ Beta
-☐ Either / As Assigned
-
-Date: ___________________________________________
-
----
-
-## Optional Witness / Vouching Designer
-
-Name of Designer Vouching for Tester: ___________________________________________
-
-Business Name, if applicable: ___________________________________________
-
-Facebook Name/Profile: ___________________________________________
-
-Email, if applicable: ___________________________________________
-
-Relationship to Tester: ___________________________________________
-
----
-
-# IMPORTANT NOTE
-
-This Agreement is a template created for Asset Moth private Alpha/Beta testing. Angela Rodgers should have this Agreement reviewed by a qualified attorney before using it as a legally binding contract.
+The signed NDA record will include the Receiving Party’s submitted legal information, business details, requested testing phase, optional vouching designer information if provided, initials, legal acknowledgments, typed electronic signature name, drawn electronic signature, IP address, user agent, and submission timestamp.
 TXT,
         ],
     ];
@@ -502,29 +463,150 @@ function all_nda_sections(): array
     return nda_sections() + nda_tail_sections();
 }
 
-function nda_text_snapshot(): string
+function snapshot_value(array $data, string $key): string
+{
+    $value = $data[$key] ?? '';
+
+    if (is_array($value)) {
+        return '';
+    }
+
+    return trim((string) $value);
+}
+
+function signed_tester_information_block(array $data): string
+{
+    if ($data === []) {
+        return '';
+    }
+
+    $testingPhase = snapshot_value($data, 'testing_phase');
+
+    $lines = [
+        '# SIGNED TESTER INFORMATION CAPTURED WITH THIS NDA',
+        '',
+        'Legal Name: ' . snapshot_value($data, 'legal_name'),
+        'Business Name, if applicable: ' . snapshot_value($data, 'business_name'),
+        'Email: ' . snapshot_value($data, 'email'),
+        'Facebook Name/Profile: ' . snapshot_value($data, 'facebook_profile'),
+        'Testing Phase Requested: ' . ($testingPhase !== '' ? $testingPhase : 'Not provided'),
+        'Typed Electronic Signature Name: ' . snapshot_value($data, 'typed_signature_name'),
+    ];
+
+    $vouchingFields = [
+        'vouching_designer_name' => 'Name of Designer Vouching for Tester',
+        'vouching_designer_business' => 'Vouching Designer Business Name',
+        'vouching_designer_facebook' => 'Vouching Designer Facebook/Profile URL',
+        'vouching_designer_email' => 'Vouching Designer Email',
+        'vouching_designer_relationship' => 'Relationship to Tester',
+    ];
+
+    $vouchingLines = [];
+
+    foreach ($vouchingFields as $key => $label) {
+        $value = snapshot_value($data, $key);
+
+        if ($value !== '') {
+            $vouchingLines[] = $label . ': ' . $value;
+        }
+    }
+
+    if ($vouchingLines !== []) {
+        $lines[] = '';
+        $lines[] = '## Optional Witness / Vouching Designer Information';
+        $lines[] = '';
+        $lines = array_merge($lines, $vouchingLines);
+    }
+
+    return implode("\n", $lines);
+}
+
+function nda_text_snapshot(array $data = []): string
 {
     $snapshot = '';
 
-    foreach (all_nda_sections() as $section) {
-        $snapshot .= $section['body'] . "\n\n---\n\n";
+    foreach (all_nda_sections() as $key => $section) {
+        $snapshot .= $section['body'] . "\n\n";
+
+        if ($key === 'opening') {
+            $signedTesterInfo = signed_tester_information_block($data);
+
+            if ($signedTesterInfo !== '') {
+                $snapshot .= $signedTesterInfo . "\n\n";
+            }
+        }
+
+        $snapshot .= "---\n\n";
     }
 
     return $snapshot;
 }
 
-function nda_text_hash(): string
+function nda_text_hash(array $data = []): string
 {
-    return hash('sha256', nda_text_snapshot());
+    return hash('sha256', nda_text_snapshot($data));
+}
+
+function render_markdownish_inline(string $text): string
+{
+    $html = h($text);
+
+    return preg_replace('/\*\*(.+?)\*\*/s', '<strong>$1</strong>', $html);
 }
 
 function render_markdownish(string $text): string
 {
-    $html = h($text);
-    $html = preg_replace('/^### (.+)$/m', '<h4>$1</h4>', $html);
-    $html = preg_replace('/^## (.+)$/m', '<h3>$1</h3>', $html);
-    $html = preg_replace('/^# (.+)$/m', '<h2>$1</h2>', $html);
-    $html = preg_replace('/\*\*(.+?)\*\*/s', '<strong>$1</strong>', $html);
+    $blocks = preg_split("/\R{2,}/", trim($text));
+    $htmlBlocks = [];
 
-    return nl2br($html);
+    foreach ($blocks as $block) {
+        $block = trim($block);
+
+        if ($block === '') {
+            continue;
+        }
+
+        if ($block === '---') {
+            $htmlBlocks[] = '<hr>';
+            continue;
+        }
+
+        if (preg_match('/^###\s+(.+)$/s', $block, $match)) {
+            $htmlBlocks[] = '<h4>' . render_markdownish_inline($match[1]) . '</h4>';
+            continue;
+        }
+
+        if (preg_match('/^##\s+(.+)$/s', $block, $match)) {
+            $htmlBlocks[] = '<h3>' . render_markdownish_inline($match[1]) . '</h3>';
+            continue;
+        }
+
+        if (preg_match('/^#\s+(.+)$/s', $block, $match)) {
+            $htmlBlocks[] = '<h2>' . render_markdownish_inline($match[1]) . '</h2>';
+            continue;
+        }
+
+        $lines = preg_split('/\R/', $block);
+        $listItems = [];
+        $allNumbered = true;
+
+        foreach ($lines as $line) {
+            if (preg_match('/^\d+\.\s+(.+)$/', trim($line), $match)) {
+                $listItems[] = '<li>' . render_markdownish_inline($match[1]) . '</li>';
+            } else {
+                $allNumbered = false;
+                break;
+            }
+        }
+
+        if ($allNumbered && $listItems !== []) {
+            $htmlBlocks[] = '<ol>' . implode('', $listItems) . '</ol>';
+            continue;
+        }
+
+        $escapedLines = array_map('render_markdownish_inline', $lines);
+        $htmlBlocks[] = '<p>' . implode('<br>', $escapedLines) . '</p>';
+    }
+
+    return implode("\n", $htmlBlocks);
 }

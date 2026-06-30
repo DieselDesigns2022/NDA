@@ -35,6 +35,50 @@ function yes_no(mixed $value): string
     return (string) $value === '1' ? 'Yes' : 'No';
 }
 
+function admin_scalar_value(mixed $value): string
+{
+    if (is_array($value)) {
+        return '';
+    }
+
+    return trim((string) $value);
+}
+
+function admin_link_href(mixed $value): string
+{
+    $url = admin_scalar_value($value);
+
+    if ($url === '' || preg_match('/\s/', $url)) {
+        return '';
+    }
+
+    if (!preg_match('#^[a-z][a-z0-9+.-]*://#i', $url)) {
+        $url = 'https://' . ltrim($url, '/');
+    }
+
+    return filter_var($url, FILTER_VALIDATE_URL) ? $url : '';
+}
+
+function render_admin_value(string $key, mixed $value): string
+{
+    $text = admin_scalar_value($value);
+    $linkFields = [
+        'business_website',
+        'facebook_profile',
+        'vouching_designer_facebook',
+    ];
+
+    if (in_array($key, $linkFields, true)) {
+        $href = admin_link_href($text);
+
+        if ($href !== '') {
+            return '<a href="' . h($href) . '" target="_blank" rel="noopener">' . h($text) . '</a>';
+        }
+    }
+
+    return h($text);
+}
+
 $submissionFields = [
     'uuid' => 'Submission ID',
     'submitted_at' => 'Submitted at (UTC)',
@@ -92,7 +136,7 @@ $acknowledgments = [
         <div class="meta">
             <?php foreach ($submissionFields as $key => $label): ?>
                 <strong><?= h($label) ?></strong>
-                <span><?= h($nda[$key] ?? '') ?></span>
+                <span><?= render_admin_value($key, $nda[$key] ?? '') ?></span>
             <?php endforeach; ?>
         </div>
 

@@ -24,14 +24,14 @@ $legalFields = [
     'email' => 'Email address',
     'phone' => 'Phone number',
     'business_name' => 'Business name',
-    'business_website' => 'Business website (https://...)',
+    'business_website' => 'Business website / URL',
     'facebook_profile' => 'Facebook name/profile URL',
 ];
 
 $vouchingFields = [
     'vouching_designer_name' => 'Name of designer vouching for tester',
     'vouching_designer_business' => 'Vouching designer business name',
-    'vouching_designer_facebook' => 'Vouching designer Facebook/profile URL',
+    'vouching_designer_facebook' => 'Vouching designer website/Facebook/profile URL',
     'vouching_designer_email' => 'Vouching designer email',
     'vouching_designer_relationship' => 'Relationship to tester',
 ];
@@ -111,7 +111,8 @@ $acknowledgments = [
                 </label>
             </div>
 
-            <h3>Optional Witness / Vouching Designer</h3>
+            <h3>Optional Vouching Designer Information</h3>
+            <p>If another established designer is vouching for you, add their name, business, website/Facebook/profile, email, and relationship here.</p>
             <div class="grid">
                 <?php foreach ($vouchingFields as $key => $label): ?>
                     <label>
